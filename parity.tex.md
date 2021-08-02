@@ -56,7 +56,7 @@ g_{ve} B_{ef} g_{ve}^{-1} = g_{ve'} B_{e'f} g_{ve'}^{-1} \tag{2}
 $$
 with 
 $$
-B_{ef} =m_{ef} | n_{ef} \rangle \langle n_{ef} | \eta_{e} - \frac{1}{2}\mathbb{I}_2 \in \mathfrak{su}(2) \; \text{or}\; \mathfrak{su}(1,1) 
+-i B_{ef} = m_{ef} | n_{ef} \rangle \langle n_{ef} | \eta_{e} - \frac{1}{2}\mathbb{I}_2 \, \qquad B \in \mathfrak{su}(2) \; \text{or}\; \mathfrak{su}(1,1) 
 $$
 Here the generators of $\mathfrak{su}(2)$ are given by $\frac{i}{2} \sigma_i$ and the generators of $\mathfrak{su}(1,1)$ are given by $\frac{1}{2} \{\sigma_1,\sigma_2,i \sigma_3 \}$. Clearly for $B_{ef} \in \mathfrak{su}(2)$, we have $B_{ef}^{\dagger} = - B_{ef}$ while for $B_{ef} \in \mathfrak{su}(1,1)$, we have $B_{ef}^{\dagger} = - \sigma_3 B_{ef} \sigma_3$, namely, $B_{ef}^{\dagger} = - \eta_{e} B_{ef} \eta_{e}$. As a result, the solutions to the bivector equations $(2)$ also satisfy
 $$
