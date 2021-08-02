@@ -12,7 +12,7 @@ $$
  {F}_{vef}[X, \kappa_{vef}] = \kappa_{vef}  \Big[ (1+ \kappa_{vef} \det(\eta_e) )\ln  \left(m_{ef}
  { {n}^{\dagger}}{}_{ef} \eta_e  {Z}_{vef} \right)
 \\ + (\kappa_{vef} \det(\eta_e) -1)  \ln \left(m_{ef}
- {Z}^{\dagger}_{vef} \eta_e { {n}}{}_{ef} \right) - (i \gamma + \kappa_{vef} \det(\eta_e) )
+ {Z}^{\dagger}_{vef} \eta_e { {n}}{}_{ef} \right) - (-i \gamma + \kappa_{vef} \det(\eta_e) )
 \ln {\left( m_{ef} {Z}^{\dagger}_{vef} \eta_{e}  {Z}_{vef} \right)} \Big] 
 $$
 where $\kappa_{vef} = \pm 1$ changes sign when changes $v$ or $e$. This formula of ${F}_{vef}$ unifies 2 cases: when $e$ is spacelike, $\eta_e = \mathbb{I}_2, \det(\eta_e)>0$, ${n}$ is the SU(2) or SU(1,1) spinor; when $e$ is timelike( SU(1,1)), $\eta_e = \sigma_3, \det(\eta_e)<0$. $m_{ef} = \pm$ is used distinguish the $D^{\pm}$ of SU(1,1) irreps. 
@@ -20,7 +20,7 @@ where $\kappa_{vef} = \pm 1$ changes sign when changes $v$ or $e$. This formula 
 Suppose $Z = \zeta n + \alpha J n$, where $\langle n, J n \rangle =0,\langle n, n \rangle = \det(\eta) \langle J n, J n \rangle = \pm 1 =m$. The $\pm 1=m$ here repsents the $D^{\pm}$ irreps of SU(1,1), The face action now
 $$
  {F}_{vef}[X, \kappa_{vef}] = \kappa_{vef}  \Big[ \ln \frac{\zeta_{vef}}{\overline{\zeta_{vef}}}+ 2 \kappa_{vef} \det(\eta_e) \ln  |\zeta_{vef}| 
- \\ - (i \gamma + \kappa_{vef} \det(\eta_e) )
+ \\ - (-i \gamma + \kappa_{vef} \det(\eta_e) )
 \ln (|\zeta_{vef}|^2 \pm |\alpha_{vef}|) \Big] 
 $$
 The real condition $\Re(F) = 0$ requires $\alpha_{vef}=0$. 
@@ -62,7 +62,7 @@ Here the generators of $\mathfrak{su}(2)$ are given by $\frac{i}{2} \sigma_i$ an
 $$
 g_{ve}^{-1 \dagger} \eta_{e} B_{ef} \eta_{e} g_{ve}^{\dagger} = g_{ve}^{-1 \dagger} \eta_{e'} B_{e'f} \eta_{e'} g_{ve'}^{\dagger}
 $$
-namely, $g_{ve}^{-1 \dagger} R_{e} \in \text{SL}(2, \mathbb{C})$, $R_{e} = i^{s_{e}} \eta_{e}$ is also a solution. In terms of spinors, such transformation leads to
+namely, $g_{ve}^{-1 \dagger} R_{e} \in \text{SL}(2, \mathbb{C})$, $R_{e} = i^{s_{e}} \eta_{e}$ is also a solution, here we use $s_e = 0$ for su2 and $s_e=1$ for su11. In terms of spinors, such transformation leads to
 $$
 m_{ef} \langle n_{ef} | ((-i)^{s_{e}} \eta_{e}^2) g_{ve}^{\dagger} =  \frac{\zeta_{vef}}{\zeta_{ve'f}} m_{e'f} \langle {n_{e'f}} | ((-i)^{s_{e'}} \eta_{e'}^2) g_{ve'}^{\dagger} \\
  g_{ve}^{-1 \dagger} i^{s_{e}} \eta_{e} | n_{ef} \rangle = \frac{\zeta_{ve'f}}{\zeta_{vef}}   g_{ve'}^{-1 \dagger} i^{s_{e'}} \eta_{e'} | n_{e'f} \rangle \\
@@ -70,15 +70,15 @@ $$
 which can be rewritten as
 $$
 g_{ve} | n_{ef} \rangle =m_{ef}m_{e'f} \frac{i^{s_{e'}} \overline{\zeta_{vef}}}{i^{s_{e}} \overline{\zeta_{ve'f}}} g_{ve'} | n_{e'f} \rangle \\
-m_{ef} \langle n_{ef} | \eta_{e} g_{ve}^{-1}= m_{ef}m_{e'f} \frac{i^{s_{e}} \overline{\zeta_{ve'f}}}{i^{s_{e'}} \overline{\zeta_{vef}}}   \langle m_{e'f} n_{e'f} | \eta_{e'} g_{ve'}^{-1} \\
+m_{ef} \langle n_{ef} | \eta_{e} g_{ve}^{-1}= m_{ef}m_{e'f} \frac{i^{s_{e}} \overline{\zeta_{ve'f}}}{i^{s_{e'}} \overline{\zeta_{vef}}}   m_{e'f} \langle n_{e'f} | \eta_{e'} g_{ve'}^{-1} \\
 $$
 thus also satisfies the spinor parallel transport equations with 
 $$
-\theta_{eve'} \to -\overline{\theta_{eve'}} + i (s_{e'} - s_{e}) \frac{\pi}{2} + i (2-m_{ef}-m_{e'f}) \frac{\pi}{2} \mod 2 i \pi
+\ln \theta_{eve'} \to -\overline{\ln \theta_{eve'}} + i (s_{e'} - s_{e}) \frac{\pi}{2} + i (2-m_{ef}-m_{e'f}) \frac{\pi}{2} \mod 2 i \pi
 $$
 where 
 $$
-\theta_{eve'} : =\log \left( \frac{\zeta_{vef}}{\zeta_{ve'f}} \right)
+\theta_{eve'} : =\left( \frac{\zeta_{vef}}{\zeta_{ve'f}} \right)
 $$
 
 Now moving to the spinor variables $z$, which is related to $\zeta$ and $g$ by
@@ -94,7 +94,7 @@ with $n_{+} = (1,0)^{T}$.
 
 From the reconstruction theorem, we know that
 $$
-\theta_{eve'}  = \frac{\Theta_{eve'}+ i n \pi }{2} + bdy \,phase , \qquad  n \in \mathbb{N}
+\ln \theta_{eve'}  = \frac{\Theta_{eve'}+ i n \pi }{2} + bdy \,phase , \qquad  n \in \mathbb{N}
 $$
 
 The critical action
@@ -124,20 +124,29 @@ $g^{-1\dagger}$ act on $(1,0,0,0)$ is the same as
 $I_0 g$ where $I_0$ is a reflection along time direction. 
 This can be seen as the following, using 
 $$
-\bar{X} = t \mathbb{I}_2 + \vec{x} \sigma_3, \qquad {X} = t \mathbb{I}_2 - \vec{x} \sigma_3
+\bar{X} = t \mathbb{I}_2 + \vec{x} \sigma_3, \qquad {X} = t \mathbb{I}_2 - \vec{x} \sigma_3, \qquad \bar{X} =I I_0 X
 $$
 and the transformations under SL(2,C),
 $$
 \bar{X} \to g \bar{X} g^{\dagger}, \qquad X \to g^{-1 \dagger} \bar{X} g^{-1}
 $$
-for $X_0=\bar{X}_0 = \mathbb{I}_2$, we clear have
+Here $I$ is the spacetime inversion $I v =-v$ and $I_0$ is the reflection along time direction
+
+For general vectors, the transformation gives
 $$
-\bar{X}=g \bar{X}_0 g^{\dagger} \to g^{-1 \dagger} \bar{X}_0 g^{-1} = g^{-1 \dagger} {X}_0 g^{-1} = X = I_0 \bar{X}
+\bar{X}=g ( t \mathbb{I}_2 + \vec{x} \sigma_3) g^{\dagger} \to g^{-1 \dagger} ( t \mathbb{I}_2 + \vec{x} \sigma_3) g^{-1} = g^{-1 \dagger} X(t,-\vec{x}) g^{-1} =I I_0 (g \bar{X}(t,-\vec{x}) g^{\dagger}) = I_0 g I_0 \bar{X}
 $$
 
 
-Similarly, $g \to g^{-1\dagger} i \sigma_3$ act on $(0,0,0,1)$ is the same as 
+Similarly, $g \to g^{-1\dagger} i \sigma_3$ act on general vectors gives
 $$
-\bar{X} =  g \bar{X}_3 g^{\dagger} \to g^{-1\dagger} i \sigma_3 \sigma_3 (g^{-1\dagger} i \sigma_3)^{\dagger} =  g^{-1\dagger} \sigma_3 (g^{-1\dagger})^{\dagger} = - g^{-1\dagger} X_3 g^{-1} = - X = I I_0 \bar{X}
+\bar{X} =  g  ( t \mathbb{I}_2 + \vec{x} \sigma_3) g^{\dagger} \to g^{-1\dagger} i \sigma_3  ( t \mathbb{I}_2 + \vec{x} \sigma_3) (g^{-1\dagger} i \sigma_3)^{\dagger}\\
+ =  g^{-1\dagger} ( t \mathbb{I}_2 - {x}_1 \sigma_1 - x_2 \sigma_2 + x_3 \sigma_3)  (g^{-1\dagger})^{\dagger} = g^{-1\dagger}X(t,x_1,x_2,-x_3) g^{-1}\\
+= I I_0 (g \bar{X}(t,x_1,x_2,-x_3) g^{\dagger}) = I_0 g I_3 \bar{X}
 $$
-This is then again corresponding to a reflection along time direction using $X_3=-\bar{X}_3 = - \sigma_3$ and the fact that we can use $I$ to map SL(2,C) to $SO(1,3)_{+}$, where $I$ is the spacetime inversion $- \mathbb{I}_4$. Thus the 4 simpelx geometry gets reflected.
+This gives out exactly the result given in Wojciech. Marcin and Hanno's paper ArXiv:1705.02862
+which is 
+$$
+G_i \to I_{e_\alpha} G_i I_{u_i} 
+$$
+with $e_{\alpha}$ chosen to be $e_0$ and $u_i=e_0$ for su2, $u_i = e_3$ for su11 up to spacetime inversion $I v =-v$.
