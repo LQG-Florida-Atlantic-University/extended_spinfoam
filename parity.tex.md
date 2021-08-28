@@ -1,7 +1,7 @@
 # Parity solutions in SFM
 
-## Action and critical EQ
-This is used to fix the notation, the notation and analysis is the same as the one in Arxiv:2104.06902.
+## Action and critical Equation
+This is used to fix the notation (The notation and analysis is similar to my paper Arxiv:2104.06902).
 
 We start with the following extended spin foam face action (Conrady-Hnybida extension)
 $$
@@ -17,7 +17,7 @@ $$
 $$
 where $\kappa_{vef} = \pm 1$ changes sign when changes $v$ or $e$. This formula of ${F}_{vef}$ unifies 2 cases: when $e$ is spacelike, $\eta_e = \mathbb{I}_2, \det(\eta_e)>0$, ${n}$ is the SU(2) or SU(1,1) spinor; when $e$ is timelike( SU(1,1)), $\eta_e = \sigma_3, \det(\eta_e)<0$. $m_{ef} = \pm$ is used distinguish the $D^{\pm}$ of SU(1,1) irreps. 
 
-Suppose $Z = \zeta n + \alpha J n$, where $\langle n, J n \rangle =0,\langle n, n \rangle = \det(\eta) \langle J n, J n \rangle = \pm 1 =m$. The $\pm 1=m$ here repsents the $D^{\pm}$ irreps of SU(1,1), The face action now
+Suppose $Z = \zeta n + \alpha J n$, where $\langle n, J n \rangle =0,\langle n, n \rangle = \det(\eta) \langle J n, J n \rangle = \pm 1 =m$. The $\pm 1=m$ here repsents the $D^{\pm}$ irreps of SU(1,1), The face action now reads
 $$
  {F}_{vef}[X, \kappa_{vef}] = \kappa_{vef}  \Big[ \ln \frac{\zeta_{vef}}{\overline{\zeta_{vef}}}+ 2 \kappa_{vef} \det(\eta_e) \ln  |\zeta_{vef}| 
  \\ - (-i \gamma + \kappa_{vef} \det(\eta_e) )
@@ -35,16 +35,17 @@ g_{ve} | n_{ef} \rangle = \frac{\zeta_{ve'f}}{\zeta_{vef}} g_{ve'} | n_{e'f} \ra
 $$
 The variation respect to $z, \bar{z}$ gives the parallel transport equation, which reads (and its complex conjugate)
 $$
- m_{ef} \langle n_{ef} | \eta_{e} g_{ve}^{-1}= \frac{\zeta_{vef}}{\zeta_{ve'f}}  m_{e'f} \langle n_{e'f} | \eta_{e'} g_{ve'}^{-1} \tag{1} 
+ m_{ef} \langle n_{ef} | \eta_{e} g_{ve}^{-1}= \frac{\zeta_{vef}}{\zeta_{ve'f}}  m_{e'f} \langle n_{e'f} | \eta_{e'} g_{ve'}^{-1} 
 $$
-The closure is 
+The closure condition is given by
 $$
 \sum_{f} \kappa_f j_f m_{ef} \langle n_{ef}, \sigma_i n_{ef} \rangle =0
 $$
+with $\langle \cdot, \cdot \rangle$ SU(2) or SU(1,1) invariant inner product.
 
 ## Parity transformation
 
-The parallel transport equation of the spin foam model take the following general form:
+The parallel transport equations of the spin foam model take the following general form:
 $$
 g_{ve} | n_{ef} \rangle = \frac{\zeta_{ve'f}}{\zeta_{vef}} g_{ve'} | n_{e'f} \rangle  \\
  m_{ef} \langle n_{ef} | \eta_{e} g_{ve}^{-1}= \frac{\zeta_{vef}}{\zeta_{ve'f}} m_{e'f} \langle n_{e'f} | \eta_{e'} g_{ve'}^{-1} \tag{1} 
@@ -72,7 +73,7 @@ $$
 g_{ve} | n_{ef} \rangle =m_{ef}m_{e'f} \frac{i^{s_{e'}} \overline{\zeta_{vef}}}{i^{s_{e}} \overline{\zeta_{ve'f}}} g_{ve'} | n_{e'f} \rangle \\
 m_{ef} \langle n_{ef} | \eta_{e} g_{ve}^{-1}= m_{ef}m_{e'f} \frac{i^{s_{e}} \overline{\zeta_{ve'f}}}{i^{s_{e'}} \overline{\zeta_{vef}}}   m_{e'f} \langle n_{e'f} | \eta_{e'} g_{ve'}^{-1} \\
 $$
-thus also satisfies the spinor parallel transport equations with 
+thus also satisfy the spinor parallel transport equations with 
 $$
 \ln \theta_{eve'} \to -\overline{\ln \theta_{eve'}} + i (s_{e'} - s_{e}) \frac{\pi}{2} + i (2-m_{ef}-m_{e'f}) \frac{\pi}{2} \mod 2 i \pi
 $$
@@ -130,11 +131,12 @@ and the transformations under SL(2,C),
 $$
 \bar{X} \to g \bar{X} g^{\dagger}, \qquad X \to g^{-1 \dagger} \bar{X} g^{-1}
 $$
-Here $I$ is the spacetime inversion $I v =-v$ and $I_0$ is the reflection along time direction
+Here $I$ is the spacetime inversion $I v =-v$.
 
 For general vectors, the transformation gives
 $$
-\bar{X}=g ( t \mathbb{I}_2 + \vec{x} \sigma_3) g^{\dagger} \to g^{-1 \dagger} ( t \mathbb{I}_2 + \vec{x} \sigma_3) g^{-1} = g^{-1 \dagger} X(t,-\vec{x}) g^{-1} =I I_0 (g \bar{X}(t,-\vec{x}) g^{\dagger}) = I_0 g I_0 \bar{X}
+\bar{X}=g ( t \mathbb{I}_2 + \vec{x} \sigma_3) g^{\dagger} \to g^{-1 \dagger} ( t \mathbb{I}_2 + \vec{x} \sigma_3) g^{-1} 
+\\= g^{-1 \dagger} X(t,-\vec{x}) g^{-1} =I I_0 (g \bar{X}(t,-\vec{x}) g^{\dagger}) = I_0 g I_0 \triangleright \bar{X}
 $$
 
 
@@ -142,9 +144,9 @@ Similarly, $g \to g^{-1\dagger} i \sigma_3$ act on general vectors gives
 $$
 \bar{X} =  g  ( t \mathbb{I}_2 + \vec{x} \sigma_3) g^{\dagger} \to g^{-1\dagger} i \sigma_3  ( t \mathbb{I}_2 + \vec{x} \sigma_3) (g^{-1\dagger} i \sigma_3)^{\dagger}\\
  =  g^{-1\dagger} ( t \mathbb{I}_2 - {x}_1 \sigma_1 - x_2 \sigma_2 + x_3 \sigma_3)  (g^{-1\dagger})^{\dagger} = g^{-1\dagger}X(t,x_1,x_2,-x_3) g^{-1}\\
-= I I_0 (g \bar{X}(t,x_1,x_2,-x_3) g^{\dagger}) = I_0 g I_3 \bar{X}
+= I I_0 (g \bar{X}(t,x_1,x_2,-x_3) g^{\dagger}) = I_0 g I_3 \triangleright \bar{X}
 $$
-This gives out exactly the result given in Wojciech. Marcin and Hanno's paper ArXiv:1705.02862
+This is exactly the result given in Wojciech. Marcin and Hanno's paper ArXiv:1705.02862
 which is 
 $$
 G_i \to I_{e_\alpha} G_i I_{u_i} 
