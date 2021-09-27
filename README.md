@@ -25,7 +25,7 @@ $$ -->
 
 <div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=%5Cbegin%7Baligned%7D%0D%0A0%20%3D%20%5Cdelta_%7Bx_1%7D%20S(x_1%2Cx_2%2C%20%5Cdots%2C%20x_n)%20%5C%5C%0D%0A0%20%3D%20%5Cdelta_%7Bx_2%7D%20S(x_1%5E0%2Cx_2%2C%20%5Cdots%2C%20x_n)%5C%5C%0D%0A%5Cvdots%20%5C%5C%0D%0A0%3D%5Cdelta_%7Bx_n%7D%20S(x_1%5E0%2C%20x_2%5E0%2C%20%5Cdots%2C%20x_n)%20%0D%0A%5Cend%7Baligned%7D%0D"></div>
 
- One can prove that such equation of motion gives the iterative version of equation of motion from the variation of the action $E^i := \delta_{x_i} S$:
+ One can prove that such equation of motion gives the iterative version of equation of motion from the variation of the action <!-- $E^i := \delta_{x_i} S$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=E%5Ei%20%3A%3D%20%5Cdelta_%7Bx_i%7D%20S">:
 <!-- $$
 \begin{aligned}
 	0 &= \delta_{x_1} S(x_1,x_2, \dots, x_n) =E_1(x_1,x_2, \dots, x_n) , \\
