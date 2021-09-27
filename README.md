@@ -2,7 +2,7 @@
 
 We provide functions which can be used to generate the boundary data as well as corresponding critical configurations of the extended spin foam model (EPRL with Conrady-Hnybida extension, ArXiv:1002.1959) which can contain both timelike and spacelike faces.
 
-Here we use it to demonstrate that the parity transformation generates new classes of gauge inequivalent solutions of the extended spinfoam models. 
+Here we use it to demonstrate that the parity transformation generates new classes of gauge inequivalent solutions of the extended spinfoam models (general_spinfoam_github.nb, the Transformations section). 
 Such transformation is given as
 <!-- $$
 g \to g^{-1 \dagger}, \;\; for \ \text{SU(2)} \ , \qquad
@@ -13,7 +13,7 @@ $$ -->
 
 The derivation is shown in the note parity.md.
 
-We also verify that above critical configurations are still critical solutions when we derive the equation of motion iteratively from the action (Appendix B5. in ArXiv: 1810.09042).
+In the code (general_spinfoam_github.nb, the action section), we also verify that above critical configurations are still critical solutions when we derive the equation of motion iteratively from the action (Appendix B5. in ArXiv: 1810.09042).
 <!-- $$
 \begin{aligned}
 0 = \delta_{x_1} S(x_1,x_2, \dots, x_n) \\
@@ -37,7 +37,7 @@ $$ -->
 $$ --> 
 
 <div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=%5Cbegin%7Baligned%7D%0D%0A%090%20%26%3D%20%5Cdelta_%7Bx_1%7D%20S(x_1%2Cx_2%2C%20%5Cdots%2C%20x_n)%20%3DE_1(x_1%2Cx_2%2C%20%5Cdots%2C%20x_n)%20%2C%20%5C%5C%0D%0A%090%20%26%3D%20%5Cdelta_%7Bx_2%7D%20S(x_1%5E0%2C%20x_2%2C%20%5Cdots%2C%20x_n)%20%3D(%5Cdelta_%7Bx_2%7D%20S)%7C_%7Bx_1%3Dx_1%5E0%7D%20%2B%5Cdelta_%7Bx_2%7D%20x_1%5E0%20%5C%20(%5Cdelta_%7Bx_1%7D%20S)%7C_%7Bx_1%3Dx_1%5E0%7D%20%20%3D(%5Cdelta_%7Bx_2%7D%20S)%7C_%7Bx_1%3Dx_1%5E0%7D%20%3DE_2(x_1%5E0%2Cx_2%2C%20%5Cdots%2C%20x_n)%2C%20%5C%5C%0D%0A%20%20%20%200%20%26%3D%20%5Cdelta_%7Bx_3%7D%20S(x_1%5E0%7C_%7Bx_2%3Dx_2%5E0%7D%2C%20x_2%5E0%2C%20%5Cdots%2C%20x_n)%20%3D(%5Cdelta_%7Bx_3%7D%20S)%7C_%7Bx_1%3Dx_1%5E0%2Cx_2%3Dx_2%5E0%7D%20%2B%5Cdelta_%7Bx_3%7D%20(x_1%5E0%7C_%7Bx_2%3Dx_2%5E0%7D)%20%5C%20(%5Cdelta_%7Bx_1%7D%20S)%7C_%7Bx_1%3Dx_1%5E0%2Cx_2%3Dx_2%5E0%7D%20%2B%5Cdelta_%7Bx_2%7D%20(x_2%5E0)%20%5C%20(%5Cdelta_%7Bx_2%7D%20S)%7C_%7Bx_1%3Dx_1%5E0%2Cx_2%3Dx_2%5E0%7D%20%20%3D(%5Cdelta_%7Bx_2%7D%20S)%7C_%7Bx_1%3Dx_1%5E0%7D%20%3DE_3(x_1%5E0%7C_%7Bx_2%3Dx_2%5E0%7D%2Cx_2%5E0%2C%20%5Cdots%2C%20x_n)%20%20%3D0%0D%0A%20%20%20%20%5C%5C%20%5Cvdots%20%5C%5C%0D%0A%090%20%26%3D%5Cdelta_%7Bx_n%7D%20S(x_1%5E0%7C_%7B%5Cforall_%7B1%3Ci%20%3Cn%7D%2C%5C%20x_i%3Dx_i%5E0%7D%2C%20x_2%5E0%7C_%7B%5Cforall_%7B2%3Ci%20%3Cn%7D%2C%5C%20x_i%3Dx_i%5E0%7D%2C%20%5Cdots%2C%20x_n)%20%3D(%5Cdelta_%7Bx_n%7D%20S)%7C_%7B%5Cforall%20i%20%3Cn%2C%5C%20x_i%3Dx_i%5E0%7D%20%3D%20E_n(x_1%5E0%2Cx_2%5E0%2C%20%5Cdots%2C%20x_n)%3D0%20%0D%0A%5Cend%7Baligned%7D%0D"></div>
-with $x_i^0(x_{i+1}, \dots, x_n)$ is the solution of the corresponding equation of motion $E_n(x_1^0, \dots, x_{i-1}^0, x_i, x_{i+1},\dots, x_n)$ respect to $x_i$. 
+with <!-- $x_i^0(x_{i+1}, \dots, x_n)$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=x_i%5E0(x_%7Bi%2B1%7D%2C%20%5Cdots%2C%20x_n)"> is the solution of the corresponding equation of motion <!-- $E_n(x_1^0, \dots, x_{i-1}^0, x_i, x_{i+1},\dots, x_n)$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=E_n(x_1%5E0%2C%20%5Cdots%2C%20x_%7Bi-1%7D%5E0%2C%20x_i%2C%20x_%7Bi%2B1%7D%2C%5Cdots%2C%20x_n)"> respect to <!-- $x_i$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=x_i">. 
 The EoM from single vertex forms a zero-dimensional polynomial system. Thus above decomposition should relate to the triangular decomposition of the polynomial system into regular chains. 
 
 ### TODO:
