@@ -43,7 +43,7 @@ with <!-- $x_i^0(x_{i+1}, \dots, x_n)$ --> <img style="transform: translateY(0.1
 
 The EoM from single vertex forms a zero-dimensional polynomial system. Thus above decomposition should relate to the triangular decomposition of the polynomial system into regular chains. 
 
-### TODO:
+### Working in progress:
 
 - Simplicial complex with many simplicies.
 - Rational univariate representation/iteratively version of the EoM
